@@ -12,7 +12,7 @@ import { getAppInfoMessage } from './messages/getAppInfoMessage.js'
 import { sendApplicatoinComposer } from './utils/sendApplication.js'
 dotenv.config()
 
-const {TG_BOT_TOKEN} = process.env
+export const {TG_BOT_TOKEN, API_URL} = process.env
 
 export const {TG_MANAGER_USERNAME} = process.env
 

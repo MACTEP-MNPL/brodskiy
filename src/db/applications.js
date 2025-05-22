@@ -40,7 +40,8 @@ export const createApplication = async (application, userId, isAdmin = false) =>
                 data: application,
                 status: 'new',
                 created_at: new Date(),
-                created_by_user: !isAdmin
+                created_by_user: !isAdmin,
+                username: user.username
             };
             
             // Format and send notification to all admins
